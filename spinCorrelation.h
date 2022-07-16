@@ -8,7 +8,7 @@ using namespace itensor;
 //computing spin correlation
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-void spinCorrelator(MPS psi, const auto sites){
+void spinCorrelator(MPS psi, const SiteSet sites){
     //auto sites = siteInds(psi);
     auto N = length(psi);
     printfln("i j <Si^z Sj^z> <Si^+ Sj^-> <Si^- Sj^+>");
