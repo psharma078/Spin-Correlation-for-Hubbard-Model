@@ -6,7 +6,7 @@ using namespace itensor;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //This file computes superconducting pairing correlation
 //<c^dag_{i,sigma} c^dag_{j,sigmap} c_{k,sigmap} c_{l,sigma}>
-//with i < j < k < l for a given wafefunction.  
+//with i < j < k < l for a given wavefunction i.e. MPS.  
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Real pairing_corr(MPS psi, const SiteSet sites, const string& op1, int i, const string& op2, int j, const string& op3, int k, const string& op4, int l){
     //auto N = length(psi);
