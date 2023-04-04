@@ -91,7 +91,7 @@ ky = np.reshape(KY,(2*Nx+1,2*Ny+1))
 Sfzz,Sfxx = str_fac(kx,ky,Rxy,SiSj)
 print(Sfzz.min(), Sfzz.max())
 print(Sfxx.min(), Sfxx.max())
-stot = Sfzz+Sfxx
+#stot = Sfzz+Sfxx
 #print(stot.min(), stot.max())
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #TEXT SETTING
