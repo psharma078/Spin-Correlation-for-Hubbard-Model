@@ -11,7 +11,7 @@ using namespace itensor;
 void spinCorrelator(MPS psi, const SiteSet sites){
     //auto sites = siteInds(psi);
     auto N = length(psi);
-    printfln("i j <Si^z Sj^z> <Si^+ Sj^-> <Si^- Sj^+>");
+    printfln("i j <Si^z Sj^z> <Si^- Sj^+> <Si^+ Sj^->");
 
     for (int i=1;i<=N;i++){
 	psi.position(i);
