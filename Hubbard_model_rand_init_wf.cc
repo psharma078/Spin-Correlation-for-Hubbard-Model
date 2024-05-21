@@ -27,6 +27,21 @@ std::vector<int> random_sample(int n, int k, T gen)
     std::sample(site_indices.begin(), site_indices.end(), std::back_inserter(out), k, gen);
     return out;
 }
+
+//selects odd random number
+std::vector<int> selectRandomOddNumbers(int n, int N) {
+    std::vector<int> oddNumbers(N / 2);
+    std::iota(oddNumbers.begin(), oddNumbers.end(), 1);
+    std::shuffle(oddNumbers.begin(), oddNumbers.end(), std::mt19937(std::random_device()()));
+
+    oddNumbers.resize(std::min(n, static_cast<int>(oddNumbers.size())));
+    std::vector<int> oddnum;
+    for (int i : range(n)){
+       oddnum.push_back(oddNumbers[i]*2-1);
+    }
+
+    return oddnum;
+}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 int
